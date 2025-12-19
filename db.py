@@ -16,7 +16,7 @@ def get_db():
     return db
 
 db = get_db()
-collection_names = ["personal_data", "notes"]
+collection_names = ["personal_data", "notes", "users"]
 
 for collection in collection_names:
     try:
@@ -26,3 +26,4 @@ for collection in collection_names:
     
 personal_data_collection = db.get_collection("personal_data")
 notes_collection = db.get_collection("notes")
+users_collection = db.get_collection("users")
